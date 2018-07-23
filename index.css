@@ -1,5 +1,5 @@
 html {
-  background-color: #320933;
+  background-color: #869960;
 }
 
 body {
@@ -11,6 +11,8 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+
 
 /* banner overlay */
 
@@ -32,6 +34,52 @@ img {
 }
 
 /* end banner overlay */
+
+
+
+/* table styles */
+
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.col-item-name {
+  width: 60%;
+}
+
+.col-quantity,
+.col-country {
+  width: 20%;
+}
+
+table th {
+  text-align: left;
+  background-color: #869960;
+  color: #fff;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0,.4);
+}
+
+table th,
+table td {
+  border: 1px solid #869960;
+  padding: 10px;
+  vertical-align: top;
+}
+
+table tbody tr:nth-child(odd) td {
+  background-color: #e5e9dc;
+}
+
+table.animal-list tr :nth-child(2),
+table.animal-list tr :nth-child(3) {
+  text-align: center;
+}
+
+/* end table styles */
+
+
 
 .container {
   max-width: 940px;
@@ -57,6 +105,8 @@ header h1 {
 header p {
   margin: 0;
 }
+
+
 
 /* site nav */
 
@@ -88,6 +138,8 @@ header p {
 }
 
 /* end site nav */
+
+
 
 .content-area {
   border-top: 3px solid #e5e9dc;
