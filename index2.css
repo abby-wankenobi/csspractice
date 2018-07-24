@@ -185,6 +185,7 @@ header p {
 }
 
 /* Add Your Grid Code Here */
+
 .row {
   margin-right: -20px;
 }
@@ -345,6 +346,7 @@ header p {
     width: 8.332%;
   }
 }
+
 /* End Grid Code Here */
 
 @media screen and (max-width: 1023px) {
@@ -367,16 +369,20 @@ footer {
   padding-top: 20px;
 }
 
+.row:before,
+.row:after,
 .group:before,
 .group:after {
   content: "";
   display: table;
 }
 
+.row:after,
 .group:after {
   clear: both;
 }
 
+.row,
 .group {
   zoom: 1;
 }
