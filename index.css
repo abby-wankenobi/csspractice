@@ -13,11 +13,16 @@ img {
 }
 
 
-
 /* banner overlay */
 
 .image-banner {
   position: relative;
+}
+
+@media screen and (max-width: 480px) {
+  .image-banner {
+    display: none;
+  }
 }
 
 .image-banner img {
@@ -158,6 +163,23 @@ input[type="submit"]:focus {
   box-sizing: border-box;
 }
 
+@media screen and (min-width: 1300px) {
+  .container {
+    max-width: 1200px;
+  }
+
+  body {
+    font-size: 17px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
 header {
   padding-top: 20px;
   color: #320933;
@@ -210,6 +232,25 @@ header p {
 
 .site-nav a:hover {
   background-color: #e5e9dc;
+}
+
+@media screen and (max-width: 700px) {
+  .site-nav li {
+    width: 33.332%;
+    margin-right: 0;
+  }
+  .site-nav a {
+    padding: 15px 0;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .site-nav li {
+    width: 50%;
+  }
 }
 
 /* end site nav */
@@ -268,6 +309,12 @@ header p {
 
 }
 
+@media screen and (max-width: 480px) {
+  .content-area {
+    padding-top: 20px;
+  }
+}
+
 .main-area {
   width: 66%;
   float: left;
@@ -285,6 +332,18 @@ header p {
   background-color: #e5e9dc;
   /* gradient background */
   background-image: linear-gradient(to bottom, #e5e9dc, #fff);
+}
+
+@media screen and (max-width: 700px) {
+  .main-area,
+  .sidebar {
+    width: auto;
+    float: none;
+  }
+
+  .main-area {
+    padding-right: 0;
+  }
 }
 
 footer {
